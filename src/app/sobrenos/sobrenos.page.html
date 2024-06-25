@@ -1,0 +1,20 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>Sobre Nós</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true" class="ion-padding">
+  <ion-card>
+    <ion-img [src]="student.image" alt="Imagem do Aluno"></ion-img>
+    <ion-card-header>
+      <ion-card-title>{{ student.name }}</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <p>Matrícula: {{ student.matricula }}</p>
+      <p>Turma: {{ student.turma }}</p>
+      <p>Turno: {{ student.turno }}</p>
+      <p>Unidade: {{ student.unidade }}</p>
+    </ion-card-content>
+  </ion-card>
+</ion-content>

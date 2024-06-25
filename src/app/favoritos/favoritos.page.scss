@@ -1,0 +1,57 @@
+// Estilos para a página de favoritos
+// Estilos para a página de favoritos
+
+// Aplicar um fundo preto à página inteira
+.page-background {
+  background-color: #000; /* Cor de fundo preto */
+  color: #fff; /* Cor do texto branca para contrastar com o fundo */
+}
+
+// Estilização específica para o conteúdo da página
+.page-content {
+  padding: 20px;
+}
+
+// Estilização específica para o conteúdo da página
+.page-content {
+  padding: 20px;
+}
+
+// Estilização para a lista de favoritos
+.favorites-list {
+  margin-top: 20px;
+  list-style-type: none;
+  padding: 0;
+}
+
+// Estilo para cada item da lista de favoritos
+.favorite-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #ccc;
+  padding: 10px 0;
+
+  .book-info {
+    flex: 1;
+    margin-left: 10px;
+
+    .title {
+      font-weight: bold;
+    }
+
+    .author {
+      font-style: italic;
+    }
+  }
+
+  .remove-button {
+    color: #f44336; // Cor vermelha para o botão de remover
+  
+  }
+}
+
+// Estilização para o toast
+.toast-message {
+  font-size: 14px;
+}

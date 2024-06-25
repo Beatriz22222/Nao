@@ -1,0 +1,62 @@
+page-login {
+    ion-content {
+      --background: #000; // Black background
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+  
+      form {
+        width: 100%;
+        max-width: 400px;
+        padding: 20px;
+        background: #1c1c1c; // Dark gray background
+        border-radius: 8px;
+        box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.5);
+  
+        ion-item {
+          --background: #333; // Darker background for form fields
+          --color: #fff; // White text color
+  
+          ion-label {
+            color: #fff; // White text color
+          }
+  
+          ion-input {
+            color: #fff; // White text color
+          }
+        }
+  
+        ion-row {
+          margin-top: 20px;
+  
+          ion-col {
+            ion-button {
+              width: 100%;
+              --border-radius: 4px;
+              
+              ion-icon {
+                margin-left: 5px;
+              }
+  
+              &.button-secondary {
+                --background: #6c757d; // Gray background for Login button
+                --color: #fff; // White text color
+              }
+  
+              &.button-tertiary {
+                --background: #007bff; // Blue background for Cadastre-se button
+                --color: #fff; // White text color
+              }
+            }
+  
+            &:last-child {
+              display: flex;
+              justify-content: flex-end;
+            }
+          }
+        }
+      }
+    }
+  }
+  

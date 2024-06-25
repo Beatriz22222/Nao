@@ -1,0 +1,13 @@
+<!-- favoritos.page.html -->
+<ion-content class="page-content">
+  <h1> Seus Favoritos</h1>
+  <ul class="favorites-list">
+    <li class="favorite-item" *ngFor="let book of favorites">
+      <div class="book-info">
+        <div class="title">{{ book.volumeInfo.title }}</div>
+        <div class="author">{{ book.volumeInfo.authors.join(', ') }}</div>
+      </div>
+      <ion-icon name="close-circle" class="remove-button" (click)="removeFromFavorites(book)"></ion-icon>
+    </li>
+  </ul>
+</ion-content>

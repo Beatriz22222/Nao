@@ -1,0 +1,16 @@
+ion-card {
+    position: relative; /* Define a posição relativa para que a posição absoluta da imagem seja relativa a este elemento */
+    margin-top: 20px;
+  }
+  
+  ion-img {
+    position: absolute; /* Define a posição absoluta para que a imagem possa ser posicionada dentro do ion-card */
+    top: 0; /* Alinha a imagem no topo do ion-card */
+    right: 0; /* Alinha a imagem à direita do ion-card */
+    width: 200px; /* Largura da imagem */
+    height: 200px; /* Altura da imagem */
+    object-fit: cover; /* Mantém a proporção da imagem e corta o excesso se necessário */
+    border-radius: 50%; /* Adiciona um formato de borda arredondada à imagem */
+    margin: 10px; /* Margem ao redor da imagem */
+  }
+  
